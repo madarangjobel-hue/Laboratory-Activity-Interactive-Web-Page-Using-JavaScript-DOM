@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page - DOM & Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" id="mainCard">
+        <h1 id="mainHeading">Web System & Technologies</h1>
+
+        <div id="messageArea" class="message-box">
+            <p id="displayText">Please enter your name below to proceed.</p>
+        </div>
+
+        <form id="userForm">
+            <div class="form-group">
+                <label for="username">User Name:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your name">
+            </div>
+
+            <p id="validationMsg" class="status-msg"></p>
+
+            <div class="button-group">
+                <button type="submit" id="submitBtn">Submit Name</button>
+                <button type="button" id="themeBtn">Toggle Theme</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
